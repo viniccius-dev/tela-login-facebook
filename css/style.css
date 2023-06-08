@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+}
+
+@font-face {
+    font-family: klavika;
+    src: url('../fonts/ufonts.com_klavika-bold-opentype.otf')
+}
+
+.clear {clear: both;}
+
+.center {
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #43609C;
+    padding: 8px 0;
+}
+
+.logo {
+    float: left;
+    color: white;
+}
+
+.logo h2 {
+    font-family: klavika;
+    font-size: 29px;
+    font-weight: normal;
+}
+
+.form-login {
+    float: right;
+}
+
+.form-login .form-element {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.form-element p {
+    color: white;
+    font-size: 13px;
+}
+
+.form-element input[type=email], 
+.form-element input[type=password] {
+    margin-top: 4px;
+    border: 0;
+    height: 22px;
+    padding-left: 5px;
+}
+
+.form-element input[type=submit] {
+    transition: 0.2s;
+    cursor: pointer;
+    border: 2px solid #215ab2;
+    background: #3d5991;
+    color: white;
+    padding: 3px 5px;
+}
+
+.form-element input[type=submit]:hover {
+    background-color: #215ab2;
+}
+
+.main {
+    background: linear-gradient(white, #D3D8E8);
+    padding: 40px 0;
+}
+
+.img-pessoas {
+    float: left;
+    width: 60%;
+}
+
+.img-pessoas img {
+    max-width: 100%;
+}
+
+.open-account {
+    float: left;
+    width: 40%;
+}
+
+.open-account h2 {
+    font-size: 35px;
+}
+
+.open-account h3 {
+    font-size: 19px;
+    color: rgb(30, 30, 30);
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+form.create-account {
+    margin-top: 10px;
+}
+
+.w50 {
+    padding: 0 5px;
+    width: 50%;
+    float: left;
+}
+
+.w100 {
+    padding: 0 5px;
+    width: 100%;
+    float: left;
+}
+
+form.create-account input {
+    width: 100%;
+    margin-top: 8px;
+}
+
+form.create-account input[type=email],
+form.create-account input[type=text],
+form.create-account input[type=password] {
+    height: 40px;
+    border: 1px solid #a5dcff;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+form.create-account input[type=submit] {
+    height: 40px;
+    background: linear-gradient(#67ae55, #578843);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    max-width: 200px;
+    font-size: 19px;
+    border-radius: 3px;
+}
+
+.w100 h2 {
+    margin: 10px 0;
+    color: #1d2129;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.w100 select {
+    padding: 5px;
+}
+
+form select.birth {
+    float: left;
+}
+
+.input-radio {
+    margin: 8px 10px;
+    float: left;
+
+}
+
+.input-radio > h2 {
+    display: inline-block;
+}
+
+.input-radio > input[type=radio] {
+    width: auto !important;
+    display: inline-block;
+}
+
+section.languages {
+    padding: 30px 0;
+    background: white;
+}
+
+section.languages a {
+    padding-right: 15px;
+    font-size: 13px;
+    color: #365899;
+    text-decoration: none;
+}
+
+section.languages .selected-language {
+    color: #737373;
+}
+
+section.languages .center {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.languages .second {
+    padding-top: 10px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    form.form-login {
+        margin-top: 17px;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-login .form-element {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .form-element p {
+        color: white;
+        font-size: 13px;
+    }
+    
+    .form-element input[type=email], 
+    .form-element input[type=password] {
+        margin-top: 4px;
+        border: 0;
+        height: 22px;
+        padding-left: 5px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .form-element input[type=submit] {
+        width: 140px;
+    }
+
+    .img-pessoas {
+        display: none;
+    }
+
+    .open-account {
+        width: 100%;
+    }
+
+    .w50 {
+        width: 100%;
+    }
+
+}
